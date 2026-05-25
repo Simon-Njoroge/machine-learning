@@ -1,11 +1,17 @@
 import torch
+import torch_directml
 
-x = torch.rand(2,3)
+device=torch_directml.device()
+
+x = torch.rand(2,3).to(device)
 
 y= torch.cuda.is_available()
 
-print(x)
+
+
+print(x.device)
 print(y)
+print(device)
 print(f"torch version:{torch.__version__}")
 
 def __init__():
