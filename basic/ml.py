@@ -7,7 +7,6 @@ x = torch.rand(2,3).to(device)
 
 y= torch.cuda.is_available()
 
-print(x)
 
 
 
